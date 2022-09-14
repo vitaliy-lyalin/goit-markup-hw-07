@@ -181,6 +181,9 @@ img {
   display: flex;
   align-items: baseline;
 }
+.main-header {
+  display: flex;
+}
 .nav-main {
   display: flex;
   align-items: center;
@@ -565,7 +568,11 @@ img {
   text-transform: uppercase;
   color: var(--white-color);
 }
+.form-field {
+  display: flex;
+}
 .form-input {
+  display: block;
   height: 50px;
   width: 358px;
   margin-right: 12px;
