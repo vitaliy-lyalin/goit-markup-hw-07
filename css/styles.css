@@ -53,7 +53,10 @@ body {
 .link {
   text-decoration: none;
 }
-
+h1,
+h2,
+h3,
+h4,
 p {
   margin-top: 0;
   margin-bottom: 0;
@@ -327,7 +330,6 @@ img {
   margin-right: 30px;
 }
 .feature-list .title {
-  margin-top: 0;
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -386,7 +388,6 @@ img {
   background-color: var(--secondary-background-color);
 }
 .team-list .title {
-  margin-top: 0;
   margin-bottom: 10px;
 
   color: var(--secondary-text-color);
@@ -525,18 +526,16 @@ img {
 .contacts-list .contact-link:focus {
   color: var(--accent-color);
 }
-
-/* Приєднуйтесь */
-.services-list {
-  display: flex;
-}
-.footer-join .title {
-  margin-top: 0;
+.footer-title {
   margin-bottom: 20px;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--white-color);
+}
+/* Приєднуйтесь */
+.services-list {
+  display: flex;
 }
 .services-item:not(:last-child) {
   margin-right: 10px;
@@ -561,14 +560,6 @@ img {
 /* Підпишиться на розсилку */
 .footer-subscribe {
   margin-left: auto;
-}
-.footer-subscribe .title {
-  margin-top: 0;
-  margin-bottom: 20px;
-  font-weight: 700;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: var(--white-color);
 }
 .form-field {
   display: flex;
@@ -847,7 +838,6 @@ img {
   border-bottom: 1px solid #eeeeee;
 }
 .container-work .title {
-  margin-top: 0;
   margin-bottom: 4px;
   color: var(--secondary-text-color);
   font-weight: 700;
