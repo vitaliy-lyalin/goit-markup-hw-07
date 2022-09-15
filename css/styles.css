@@ -171,18 +171,19 @@ img {
   margin-right: auto;
   margin-left: auto;
 }
-
-/* Шапка сайту */
-.page-header {
-  background-color: var(--white-color);
-  border-bottom: 1px solid #ececec;
-}
 .main {
   display: flex;
   align-items: baseline;
 }
+/* Шапка сайту */
+.page-header {
+  padding: 24px 0;
+  background-color: var(--white-color);
+  border-bottom: 1px solid #ececec;
+}
 .main-header {
   display: flex;
+  /* align-items: baseline; */
 }
 .nav-main {
   display: flex;
@@ -203,14 +204,14 @@ img {
 .logo {
   display: block;
   margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  /* padding-top: 24px;
+  padding-bottom: 24px; */
 }
 .nav-site .item {
   position: relative;
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  /* display: block; */
+  /* padding-top: 32px;
+  padding-bottom: 32px; */
 }
 .link.current::after {
   display: flex;
@@ -218,21 +219,21 @@ img {
   content: '';
   width: 100%;
   height: 4px;
-  bottom: -1px;
+  bottom: -33px;
   left: 0;
   border-radius: 2px;
   background-color: #2196f3;
 }
 .nav-contacts .item {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  /* display: block; */
+  /* padding-top: 32px;
+  padding-bottom: 32px; */
 }
 .nav-contacts .item:not(:last-child) {
   margin-right: 30px;
 }
-
 .nav-site .link {
+  display: block;
   color: var(--secondary-text-color);
   font-weight: 500;
   line-height: 1.14;
@@ -245,6 +246,7 @@ img {
   color: var(--accent-color);
 }
 .nav-contacts .link {
+  display: block;
   color: var(--primary-text-color);
   font-weight: 500;
   line-height: 1.14;
