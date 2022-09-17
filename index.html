@@ -18,19 +18,22 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/main.min.css">
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- Шапка сайту -->
     <header class="page-header">
-      <div class="container main-header">
+      <div class="container page-header-main">
         <nav class="nav-main">
           <!-- Лого хедер -->
-          <a class="logo link" href="./index.html">Web<span class="header-studio">Studio</span> </a>
+          <a class="logo logo__header link" href="./index.html"
+            >Web<span class="logo__header_studio-black">Studio</span>
+          </a>
           <!-- Навігація на інші сторінки -->
           <ul class="nav-site list">
-            <li class="item"><a href="./index.html" class="link current">Студія</a></li>
+            <li class="item">
+              <a href="./index.html" class="link nav-site-link-current">Студія</a>
+            </li>
             <li class="item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
             <li class="item"><a href="" class="link">Контакти</a></li>
           </ul>
@@ -58,21 +61,19 @@
     <!-- Унікальний контент сторінки -->
     <main>
       <!-- Герой -->
-      <section class="section hero overlay">
+      <section class="section-hero overlay">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="button primary-button" data-modal-open>
-            Замовити послугу
-          </button>
+          <button type="button" class="button hero-button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <!-- Особливості -->
-      <section class="section features">
+      <section class="section section-features">
         <div class="container main-features">
           <h2 class="section-title visually-hidden">Особливості</h2>
           <ul class="feature-list list">
             <li class="feature-element">
-              <div class="icon-element">
+              <div class="feature-element-icon">
                 <svg class="icon-feature" width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna-1"></use>
                 </svg>
@@ -83,7 +84,7 @@
               </p>
             </li>
             <li class="feature-element">
-              <div class="icon-element">
+              <div class="feature-element-icon">
                 <svg class="icon-feature" width="70" height="70">
                   <use href="./images/icons.svg#icon-clock-1"></use>
                 </svg>
@@ -94,7 +95,7 @@
               </p>
             </li>
             <li class="feature-element">
-              <div class="icon-element">
+              <div class="feature-element-icon">
                 <svg class="icon-feature" width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram-1"></use>
                 </svg>
@@ -103,7 +104,7 @@
               <p class="text">Так само консультація з широким активом значною мірою зумовлює.</p>
             </li>
             <li class="feature-element">
-              <div class="icon-element">
+              <div class="feature-element-icon">
                 <svg class="icon-feature" width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut-1"></use>
                 </svg>
@@ -117,45 +118,45 @@
         </div>
       </section>
       <!-- Чим ми займаємося -->
-      <section class="section potfolio">
+      <section class="section production">
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
-          <ul class="portfolio-list list">
-            <li class="potfolio-element">
+          <ul class="production-list list">
+            <li class="production-element">
               <img
                 src="./images/box1.jpg"
                 alt="Розробка десктопного додатку"
                 width="370"
                 height="294"
               />
-              <p class="portfolio-label">Десктопні додатки</p>
+              <p class="production-label">Десктопні додатки</p>
             </li>
-            <li class="potfolio-element">
+            <li class="production-element">
               <img
                 src="./images/box2.jpg"
                 alt="Розробка додатку для мобільного телефону"
                 width="370"
                 height="294"
               />
-              <p class="portfolio-label">Мобільні додатки</p>
+              <p class="production-label">Мобільні додатки</p>
             </li>
-            <li class="potfolio-element">
+            <li class="production-element">
               <img src="./images/box3.jpg" alt="Розробка дизайну" width="370" height="294" />
-              <p class="portfolio-label">Дизайнерські рішення</p>
+              <p class="production-label">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
       </section>
       <!-- Наша команда -->
-      <section class="section teams">
+      <section class="section section-team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-element">
               <img src="./images/team1.jpg" alt="Ігор Дем'яненко" width="270" height="260" />
               <div class="container-team">
-                <h3 class="title">Ігор Дем'яненко</h3>
-                <p lang="en" class="text">Product Designer</p>
+                <h3 class="team-element-title">Ігор Дем'яненко</h3>
+                <p lang="en" class="team-element-text">Product Designer</p>
                 <ul class="social-links list">
                   <li class="team-social">
                     <a class="link" href="">
@@ -215,8 +216,8 @@
             <li class="team-element">
               <img src="./images/team2.jpg" alt="Ольга Рєпіна" width="270" height="260" />
               <div class="container-team">
-                <h3 class="title">Ольга Рєпіна</h3>
-                <p lang="en" class="text">Frontend Developer</p>
+                <h3 class="team-element-title">Ольга Рєпіна</h3>
+                <p lang="en" class="team-element-text">Frontend Developer</p>
                 <ul class="social-links list">
                   <li class="team-social">
                     <a class="link" href="">
@@ -276,8 +277,8 @@
             <li class="team-element">
               <img src="./images/team3.jpg" alt="Микола Тарасов" width="270" height="260" />
               <div class="container-team">
-                <h3 class="title">Микола Тарасов</h3>
-                <p lang="en" class="text">Marketing</p>
+                <h3 class="team-element-title">Микола Тарасов</h3>
+                <p lang="en" class="team-element-text">Marketing</p>
                 <ul class="social-links list">
                   <li class="team-social">
                     <a class="link" href="">
@@ -337,8 +338,8 @@
             <li class="team-element">
               <img src="./images/team4.jpg" alt="Михайло Єрмаков" width="270" height="260" />
               <div class="container-team">
-                <h3 class="title">Михайло Єрмаков</h3>
-                <p lang="en" class="text">UI Designer</p>
+                <h3 class="team-element-title">Михайло Єрмаков</h3>
+                <p lang="en" class="team-element-text">UI Designer</p>
                 <ul class="social-links list">
                   <li class="team-social">
                     <a class="link" href="">
@@ -451,11 +452,11 @@
     </main>
     <!-- Футер -->
     <footer class="page-footer">
-      <div class="container main">
+      <div class="container page-footer-main">
         <div class="footer-contacts">
           <!-- Лого футер -->
-          <a class="logo footer link" href="./index.html"
-            >Web<span class="footer-studio">Studio</span>
+          <a class="logo logo__footer link" href="./index.html"
+            >Web<span class="logo__footer_studio-white">Studio</span>
           </a>
           <!-- Адреса -->
           <address>

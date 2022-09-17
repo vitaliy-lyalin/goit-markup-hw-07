@@ -1,0 +1,28 @@
+.section-features {
+  padding-bottom: 0;
+}
+.feature-list {
+  display: flex;
+}
+.feature-element {
+  width: 270px;
+}
+.feature-element:not(:last-child) {
+  margin-right: 30px;
+}
+.feature-list .title {
+  margin-bottom: 10px;
+
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+}
+.feature-element-icon {
+  display: flex;
+  height: 120px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}

@@ -1,0 +1,120 @@
+.page-footer {
+  background-color: var(--footer-background-color);
+  padding: 60px 0;
+}
+.page-footer-main {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-contacts {
+  margin-right: 70px;
+}
+
+.contacts-list .item:not(:last-child) {
+  margin-top: 0;
+  margin-bottom: 9px;
+}
+.contacts-list .location-link {
+  display: block;
+
+  font-style: normal;
+  color: var(--white-color);
+
+  transition: color var(--transition-dur-and-func);
+}
+.contacts-list .location-link:hover,
+.contacts-list .location-link:focus {
+  color: var(--accent-color);
+}
+.contacts-list .contact-link {
+  display: block;
+
+  font-style: normal;
+  color: var(--footer-text-color);
+
+  transition: color var(--transition-dur-and-func);
+}
+.contacts-list .contact-link:hover,
+.contacts-list .contact-link:focus {
+  color: var(--accent-color);
+}
+.footer-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+/* Приєднуйтесь */
+.services-list {
+  display: flex;
+}
+.services-item:not(:last-child) {
+  margin-right: 10px;
+}
+.services-item .link {
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--white-color);
+  background-color: var(--footer-icon-background-color);
+
+  transition: background-color var(--transition-dur-and-func);
+}
+.services-item .link:hover,
+.services-item .link:focus {
+  background-color: var(--accent-color);
+}
+
+/* Підпишиться на розсилку */
+.footer-subscribe {
+  margin-left: auto;
+}
+.form-field {
+  display: flex;
+}
+.form-input {
+  display: block;
+  height: 50px;
+  width: 358px;
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: inherit;
+
+  padding-left: 16px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+}
+.form-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-subscribe-submit-button {
+  padding: 10px 28px;
+
+  background-color: var(--accent-color);
+  color: var(--white-color);
+
+  transition: background-color var(--transition-dur-and-func), color var(--transition-dur-and-func);
+}
+.footer-subscribe-submit-button:hover,
+.footer-subscribe-submit-button:focus {
+  background-color: var(--secondary-background-color);
+  color: var(--secondary-text-color);
+}
+.input-icon {
+  vertical-align: middle;
+  margin-left: 10px;
+  fill: currentColor;
+}

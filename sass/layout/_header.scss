@@ -1,0 +1,64 @@
+.page-header {
+  padding: 24px 0;
+  background-color: var(--white-color);
+  border-bottom: 1px solid #ececec;
+}
+.page-header-main {
+  display: flex;
+}
+.nav-main {
+  display: flex;
+  align-items: center;
+}
+.nav-site {
+  display: flex;
+  align-items: center;
+}
+.nav-contacts {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+.nav-site .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-site .item {
+  position: relative;
+}
+
+.nav-contacts .item:not(:last-child) {
+  margin-right: 30px;
+}
+.nav-site .link {
+  display: block;
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition: color var(--transition-dur-and-func);
+}
+.nav-site .link:hover,
+.nav-site .link:focus {
+  color: var(--accent-color);
+}
+.nav-contacts .link {
+  display: block;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition: color var(--transition-dur-and-func);
+}
+.nav-contacts .link:hover,
+.nav-contacts .link:focus {
+  color: var(--accent-color);
+}
+
+.contact-icon {
+  margin-right: 10px;
+  fill: currentColor;
+  vertical-align: middle;
+}

@@ -19,19 +19,22 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Шапка сайту -->
     <header class="page-header">
-      <div class="container main-header">
+      <div class="container page-header-main">
         <nav class="nav-main">
           <!-- Лого хедер -->
-          <a class="logo link" href="./index.html">Web<span class="header-studio">Studio</span> </a>
+          <a class="logo logo__header link" href="./index.html"
+            >Web<span class="logo__header_studio-black">Studio</span>
+          </a>
           <!-- Навігація на інші сторінки -->
           <ul class="nav-site list">
             <li class="item"><a href="./index.html" class="link">Студія</a></li>
-            <li class="item"><a href="./portfolio.html" class="link current">Портфоліо</a></li>
+            <li class="item">
+              <a href="./portfolio.html" class="link nav-site-link-current">Портфоліо</a>
+            </li>
             <li class="item"><a href="" class="link">Контакти</a></li>
           </ul>
         </nav>
@@ -57,23 +60,23 @@
     </header>
     <!-- Унікальний контент сторінки -->
     <main>
-      <section class="section works">
+      <section class="section">
         <h1 class="section-title visually-hidden">Чим ми займаємося</h1>
         <div class="container main-works">
           <!-- Фільтр робіт -->
           <ul class="filter-list list">
-            <li class="item"><button type="button" class="button secondary-button">Усі</button></li>
+            <li class="item"><button type="button" class="button filter-list-button">Усі</button></li>
             <li class="item">
-              <button type="button" class="button secondary-button">Веб-сайти</button>
+              <button type="button" class="button filter-list-button">Веб-сайти</button>
             </li>
             <li class="item">
-              <button type="button" class="button secondary-button">Додатки</button>
+              <button type="button" class="button filter-list-button">Додатки</button>
             </li>
             <li class="item">
-              <button type="button" class="button secondary-button">Дизайн</button>
+              <button type="button" class="button filter-list-button">Дизайн</button>
             </li>
             <li class="item">
-              <button type="button" class="button secondary-button">Маркетинг</button>
+              <button type="button" class="button filter-list-button">Маркетинг</button>
             </li>
           </ul>
           <ul class="work-list list">
@@ -290,11 +293,11 @@
     </main>
     <!-- Футер -->
     <footer class="page-footer">
-      <div class="container main">
+      <div class="container page-footer-main">
         <div class="footer-contacts">
           <!-- Лого футер -->
-          <a class="logo footer link" href="./index.html"
-            >Web<span class="footer-studio">Studio</span>
+          <a class="logo logo__footer link" href="./index.html"
+            >Web<span class="logo__footer_studio-white">Studio</span>
           </a>
           <!-- Адреса -->
           <address>

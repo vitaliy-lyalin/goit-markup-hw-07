@@ -3,4 +3,21 @@
 
 @import './base/common';
 @import './base/container';
+@import './base/section';
 
+@import './components/button';
+@import './components/logo';
+@import './components/section-title';
+@import './components/nav-site-link-current';
+@import './components/backdrop';
+@import './components/modal-window';
+@import './components/modal-form';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/features';
+@import './layout/production';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/footer';
+@import './layout/portfolio';
