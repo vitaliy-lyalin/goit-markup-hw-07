@@ -2,20 +2,20 @@
   background-color: var(--footer-background-color);
   padding: 60px 0;
 }
-.page-footer-main {
+.page-footer-container {
   display: flex;
   align-items: baseline;
 }
 
-.footer-contacts {
+.page-footer-wrapper {
   margin-right: 70px;
 }
 
-.contacts-list .item:not(:last-child) {
+.contacts__item:not(:last-child) {
   margin-top: 0;
   margin-bottom: 9px;
 }
-.contacts-list .location-link {
+.contacts__location-link {
   display: block;
 
   font-style: normal;
@@ -23,11 +23,11 @@
 
   transition: color var(--transition-dur-and-func);
 }
-.contacts-list .location-link:hover,
-.contacts-list .location-link:focus {
+.contacts__location-link:hover,
+.contacts__location-link:focus {
   color: var(--accent-color);
 }
-.contacts-list .contact-link {
+.contacts__communication-link {
   display: block;
 
   font-style: normal;
@@ -35,25 +35,19 @@
 
   transition: color var(--transition-dur-and-func);
 }
-.contacts-list .contact-link:hover,
-.contacts-list .contact-link:focus {
+.contacts__communication-link:hover,
+.contacts__communication-link:focus {
   color: var(--accent-color);
 }
-.footer-title {
-  margin-bottom: 20px;
-  font-weight: 700;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: var(--white-color);
-}
+
 /* Приєднуйтесь */
-.services-list {
+.socials-list {
   display: flex;
 }
-.services-item:not(:last-child) {
+.socials-list__item:not(:last-child) {
   margin-right: 10px;
 }
-.services-item .link {
+.socials-list__link {
   border-radius: 50%;
   width: 44px;
   height: 44px;
@@ -65,19 +59,19 @@
 
   transition: background-color var(--transition-dur-and-func);
 }
-.services-item .link:hover,
-.services-item .link:focus {
+.socials-list__link:hover,
+.socials-list__link:focus {
   background-color: var(--accent-color);
 }
 
 /* Підпишиться на розсилку */
-.footer-subscribe {
+.subscribe-form {
   margin-left: auto;
 }
-.form-field {
+.subscribe-form-wrapper {
   display: flex;
 }
-.form-input {
+.subscribe-form__input {
   display: block;
   height: 50px;
   width: 358px;
@@ -96,11 +90,11 @@
   letter-spacing: 0.03em;
   color: var(--white-color);
 }
-.form-input::placeholder {
+.subscribe-form__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-subscribe-submit-button {
+.subscribe-form__button {
   padding: 10px 28px;
 
   background-color: var(--accent-color);
@@ -108,13 +102,13 @@
 
   transition: background-color var(--transition-dur-and-func), color var(--transition-dur-and-func);
 }
-.footer-subscribe-submit-button:hover,
-.footer-subscribe-submit-button:focus {
+.subscribe-form__button:hover,
+.subscribe-form__button:focus {
   background-color: var(--secondary-background-color);
   color: var(--secondary-text-color);
 }
-.input-icon {
-  vertical-align: middle;
+.subscribe-form__icon {
   margin-left: 10px;
+  vertical-align: middle;
   fill: currentColor;
 }

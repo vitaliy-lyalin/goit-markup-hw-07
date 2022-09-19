@@ -1,4 +1,4 @@
-.nav-site-link-current::after {
+.menu__link_current::after {
   display: flex;
   position: absolute;
   content: '';
@@ -9,6 +9,6 @@
   border-radius: 2px;
   background-color: #2196f3;
 }
-.nav-site .nav-site-link-current {
+.menu .menu__link_current {
   color: var(--accent-color);
 }
