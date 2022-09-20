@@ -1,13 +1,16 @@
-.production-list {
+.skills-list {
   display: flex;
 }
-.production-element:not(:last-child) {
-  margin-right: 30px;
-}
-.production-element {
+
+.skills-list__item {
   position: relative;
 }
-.production-label {
+
+.skills-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.skills-list__label {
   position: absolute;
   display: flex;
   bottom: 0;

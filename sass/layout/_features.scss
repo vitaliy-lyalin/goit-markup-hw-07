@@ -1,22 +1,22 @@
 .section-features {
   padding-bottom: 0;
 }
-.feature-list {
+.section-features__list {
   display: flex;
 }
-.feature-element {
+.section-features__item {
   width: 270px;
 }
-.feature-element:not(:last-child) {
+.section-features__item:not(:last-child) {
   margin-right: 30px;
 }
-.feature-list .title {
+.section-features__title {
   margin-bottom: 10px;
 
   text-transform: uppercase;
   color: var(--secondary-text-color);
 }
-.feature-element-icon {
+.feature-decoration {
   display: flex;
   height: 120px;
   width: 100%;
@@ -25,4 +25,8 @@
   margin-bottom: 30px;
   background: #f5f4fa;
   border-radius: 4px;
+}
+.feature-decoration__icon {
+  background-repeat: none;
+  background-size: contain;
 }
