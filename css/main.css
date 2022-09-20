@@ -593,11 +593,11 @@ img {
   justify-content: center;
 }
 
-.clients-element:not(:last-child) {
+.clients-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.clients-element .link {
+.clients-list__link {
   display: flex;
   width: 170px;
   height: 92px;
@@ -609,8 +609,8 @@ img {
   transition: fill var(--transition-dur-and-func), border var(--transition-dur-and-func);
 }
 
-.clients-element .link:hover,
-.clients-element .link:focus {
+.clients-list__link:hover,
+.cclients-list__link:focus {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
