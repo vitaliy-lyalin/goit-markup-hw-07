@@ -1,14 +1,20 @@
-.page-header {
+.header {
   padding: 24px 0;
   background-color: var(--white-color);
   border-bottom: 1px solid #ececec;
 }
-.page-header-container {
+.header-container {
   display: flex;
 }
-.page-navigation {
+.header-navigation {
   display: flex;
   align-items: center;
+}
+.header-navigation__logo {
+  margin-right: 93px;
+}
+.header-navigation__label {
+  color: var(--black-color);
 }
 .menu {
   display: flex;
