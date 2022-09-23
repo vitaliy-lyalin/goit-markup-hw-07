@@ -1,22 +1,22 @@
 .section-features {
   padding-bottom: 0;
 }
-.section-features__list {
+.features-list {
   display: flex;
 }
-.section-features__item {
+.features-list__item {
   width: 270px;
 }
-.section-features__item:not(:last-child) {
+.features-list__item:not(:last-child) {
   margin-right: 30px;
 }
-.section-features__title {
+.features-list__title {
   margin-bottom: 10px;
 
   text-transform: uppercase;
   color: var(--secondary-text-color);
 }
-.feature-decoration {
+.features-list-wrapper {
   display: flex;
   height: 120px;
   width: 100%;
@@ -26,7 +26,7 @@
   background: #f5f4fa;
   border-radius: 4px;
 }
-.feature-decoration__icon {
+.features-list-wrapper__icon {
   background-repeat: none;
   background-size: contain;
 }
