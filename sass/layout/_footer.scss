@@ -28,11 +28,13 @@
   color: var(--white-color);
 
   transition: color var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
-.contacts__location-link:hover,
-.contacts__location-link:focus {
-  color: var(--accent-color);
-}
+
 .contacts__communication-link {
   display: block;
 
@@ -40,10 +42,11 @@
   color: var(--footer-text-color);
 
   transition: color var(--transition-dur-and-func);
-}
-.contacts__communication-link:hover,
-.contacts__communication-link:focus {
-  color: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 /* Приєднуйтесь */
@@ -64,10 +67,11 @@
   background-color: var(--footer-icon-background-color);
 
   transition: background-color var(--transition-dur-and-func);
-}
-.join-list__link:hover,
-.join-list__link:focus {
-  background-color: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 /* Підпишиться на розсилку */
@@ -95,9 +99,10 @@
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: var(--white-color);
-}
-.subscribe-form__input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .subscribe-form__button {
@@ -107,12 +112,14 @@
   color: var(--white-color);
 
   transition: background-color var(--transition-dur-and-func), color var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    background-color: var(--secondary-background-color);
+    color: var(--secondary-text-color);
+  }
 }
-.subscribe-form__button:hover,
-.subscribe-form__button:focus {
-  background-color: var(--secondary-background-color);
-  color: var(--secondary-text-color);
-}
+
 .subscribe-form__icon {
   margin-left: 10px;
   vertical-align: middle;

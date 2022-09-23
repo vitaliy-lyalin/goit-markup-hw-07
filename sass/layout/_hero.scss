@@ -34,9 +34,10 @@
   color: var(--white-color);
 
   transition: background-color var(--transition-dur-and-func), color var(--transition-dur-and-func);
-}
-.hero-button:hover,
-.hero-button:focus {
-  background-color: var(--secondary-background-color);
-  color: var(--secondary-text-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--secondary-background-color);
+    color: var(--secondary-text-color);
+  }
 }

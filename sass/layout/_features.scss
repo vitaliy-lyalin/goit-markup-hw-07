@@ -3,30 +3,35 @@
 }
 .features-list {
   display: flex;
-}
-.features-list__item {
-  width: 270px;
-}
-.features-list__item:not(:last-child) {
-  margin-right: 30px;
-}
-.features-list__title {
-  margin-bottom: 10px;
 
-  text-transform: uppercase;
-  color: var(--secondary-text-color);
-}
-.features-list-wrapper {
-  display: flex;
-  height: 120px;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-  background: #f5f4fa;
-  border-radius: 4px;
-}
-.features-list-wrapper__icon {
-  background-repeat: none;
-  background-size: contain;
+  &__item {
+    width: 270px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &-wrapper {
+    display: flex;
+    height: 120px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    background: #f5f4fa;
+    border-radius: 4px;
+  }
+
+  &-wrapper__icon {
+    background-repeat: none;
+    background-size: contain;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+  }
 }
