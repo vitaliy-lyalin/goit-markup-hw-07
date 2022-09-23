@@ -31,8 +31,9 @@
 }
 .modal-close-button__icon {
   transition: fill var(--transition-dur-and-func);
-}
-.modal-close-button:hover .modal-close-button__icon,
-.modal-close-button:focus .modal-close-button__icon {
-  fill: var(--accent-color);
+
+  .modal-close-button:hover &,
+  .modal-close-button:focus & {
+    fill: var(--accent-color);
+  }
 }

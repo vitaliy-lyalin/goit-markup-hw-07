@@ -32,6 +32,11 @@
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--primary-text-color);
+
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
 }
 .modal-form-field__label {
   display: block;
@@ -49,14 +54,12 @@
   left: 12px;
   transform: translateY(-50%);
   transition: fill var(--transition-dur-and-func);
+
+  .modal-form-field__input:focus + & {
+    fill: var(--accent-color);
+  }
 }
-.modal-form-field__input:focus {
-  outline: none;
-  border-color: var(--accent-color);
-}
-.modal-form-field__input:focus + .modal-form-field__icon {
-  fill: var(--accent-color);
-}
+
 .modal-form__comment {
   display: block;
   width: 100%;
@@ -72,17 +75,19 @@
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--primary-text-color);
+
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
 }
-.modal-form__comment::placeholder {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-.modal-form__comment:focus {
-  outline: none;
-  border-color: var(--accent-color);
-}
+
 .modal-form-checkbox {
   display: flex;
   align-items: center;
@@ -95,23 +100,25 @@
   border-radius: 2px;
   cursor: pointer;
   margin-right: 7px;
+
+  .modal-form-checkbox__check:checked + & {
+    border-color: transparent;
+    background-color: var(--accent-color);
+  }
+
+  .modal-form-checkbox__check:focus + & {
+    box-shadow: 0 0 0 2px var(--accent-color);
+  }
 }
 .modal-form-checkbox__icon {
   display: none;
   fill: var(--white-color);
+
+  .modal-form-checkbox__check:checked + .modal-form-checkbox__custom-check > & {
+    display: block;
+  }
 }
-.modal-form-checkbox__check:checked + .modal-form-checkbox__custom-check {
-  border-color: transparent;
-  background-color: var(--accent-color);
-}
-.modal-form-checkbox__check:checked
-  + .modal-form-checkbox__custom-check
-  > .modal-form-checkbox__icon {
-  display: block;
-}
-.modal-form-checkbox__check:focus + .modal-form-checkbox__custom-check {
-  box-shadow: 0 0 0 2px var(--accent-color);
-}
+
 .modal-form-checkbox__user-policy {
   color: var(--accent-color);
 }

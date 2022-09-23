@@ -9,12 +9,13 @@
 
 .footer-contacts-wrapper {
   margin-right: 70px;
-}
-.footer-contacts-wrapper__logo {
-  margin-bottom: 20px;
-}
-.footer-contacts-wrapper__label {
-  color: var(--white-color);
+
+  &__logo {
+    margin-bottom: 20px;
+  }
+  &__label {
+    color: var(--white-color);
+  }
 }
 
 .contacts__item:not(:last-child) {
