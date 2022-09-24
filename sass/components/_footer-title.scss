@@ -1,7 +1,7 @@
 .footer-title {
   margin-bottom: 20px;
-  font-weight: 700;
-  line-height: 1.14;
+
+  @mixin font($fw: 700, $lh: 16px)
   text-transform: uppercase;
   color: var(--white-color);
 }

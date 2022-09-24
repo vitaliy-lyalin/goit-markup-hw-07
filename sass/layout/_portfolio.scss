@@ -1,7 +1,6 @@
 .portfolio-filter {
   margin-bottom: 50px;
-  display: flex;
-  justify-content: center;
+  @extend %align;
 }
 .portfolio-filter__item:not(:last-child) {
   margin-right: 8px;
@@ -9,13 +8,10 @@
 
 .portfolio-filter__button {
   padding: 6px 22px;
-
-  font-weight: 500;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
+  @mixin font($fw: 500, $lh: 26px);
+  color: var(--secondary-text-color);
 
   background-color: var(--secondary-background-color);
-  color: var(--secondary-text-color);
 
   transition: background-color var(--transition-dur-and-func), color var(--transition-dur-and-func),
     box-shadow var(--transition-dur-and-func);
@@ -59,12 +55,12 @@
   left: 0;
   width: 370px;
   height: 294px;
+  padding: 63px 24px;
+
   background-color: rgba(33, 150, 243, 0.9);
 
-  font-size: 18px;
-  line-height: 1.56;
+  @mixin font($fs: 18px, $lh: 28px);
   color: var(--white-color);
-  padding: 63px 24px;
 
   transform: translateY(100%);
   transition: transform var(--transition-dur-and-func);

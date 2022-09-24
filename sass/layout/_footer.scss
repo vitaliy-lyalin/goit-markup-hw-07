@@ -61,9 +61,7 @@
   border-radius: 50%;
   width: 44px;
   height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %align;
   fill: var(--white-color);
   background-color: var(--footer-icon-background-color);
 
@@ -95,10 +93,7 @@
   padding-left: 16px;
   font-family: 'Roboto';
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
+  @mixin font($fs: 16px, $lh: 20px);
   color: var(--white-color);
 
   &::placeholder {

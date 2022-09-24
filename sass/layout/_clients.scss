@@ -1,6 +1,5 @@
 .clients-list {
-  display: flex;
-  justify-content: center;
+  @extend %align;
 }
 
 .clients-list__item:not(:last-child) {
@@ -8,13 +7,12 @@
 }
 
 .clients-list__link {
-  display: flex;
+  @extend %align;
   width: 170px;
   height: 92px;
   border: 1px solid var(--icon-background-color);
   border-radius: 4px;
-  justify-content: center;
-  align-items: center;
+
   fill: var(--icon-background-color);
 
   transition: fill var(--transition-dur-and-func), border var(--transition-dur-and-func);

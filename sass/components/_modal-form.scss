@@ -1,10 +1,8 @@
 .modal-form-title {
   margin-bottom: 12px;
-
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
   text-align: center;
+
+  @mixin font($fw: 700, $fs: 20px, $lh: 23px);
   color: var(--secondary-text-color);
 }
 .modal-form {
@@ -28,9 +26,7 @@
 
   transition: border-color var(--transition-dur-and-func);
 
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  @mixin font($fs: 12px, $lh: 14px, $ls: 0.01em);
   color: var(--primary-text-color);
 
   &:focus {
@@ -42,9 +38,7 @@
   display: block;
   margin-bottom: 4px;
 
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  @mixin font($fs: 12px, $lh: 14px, $ls: 0.01em);
   color: var(--primary-text-color);
 }
 .modal-form-field__icon {
@@ -71,15 +65,11 @@
   resize: none;
   transition: border-color var(--transition-dur-and-func);
 
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  @mixin font($fs: 12px, $lh: 14px, $ls: 0.01em);
   color: var(--primary-text-color);
 
   &::placeholder {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
+    @mixin font($fs: 12px, $lh: 14px, $ls: 0.01em);
     color: rgba(117, 117, 117, 0.5);
   }
   &:focus {
@@ -89,9 +79,7 @@
 }
 
 .modal-form-checkbox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %align;
   margin-top: 10px;
   margin-bottom: 30px;
 }
