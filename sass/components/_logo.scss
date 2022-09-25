@@ -4,9 +4,6 @@
   padding-bottom: 0;
 
   font-family: Raleway, sans-serif;
-  @mixin font($fw: 700, $fs: 26px, $lh: 31px)
+  @include font($fw: 700, $fs: 26px, $lh: 31px);
   color: var(--accent-color);
 }
-
-
-

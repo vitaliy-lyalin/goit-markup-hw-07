@@ -28,9 +28,7 @@
   }
 }
 .menu__link {
-  display: block;
-
-  @mixin font($fw: 500, $lh: 16px, $ls: 0.02em);
+  @include font($fw: 500, $lh: 16px, $ls: 0.02em);
   color: var(--secondary-text-color);
 
   transition: color var(--transition-dur-and-func);
@@ -51,11 +49,9 @@
 }
 
 .communication__link {
-  display: block;
+  @extend %align;
   color: var(--primary-text-color);
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font($fw: 500, $lh: 16px, $ls: 0.02em);
 
   transition: color var(--transition-dur-and-func);
 
@@ -67,6 +63,5 @@
 
 .communication__icon {
   margin-right: 10px;
-  vertical-align: middle;
   fill: currentColor;
 }

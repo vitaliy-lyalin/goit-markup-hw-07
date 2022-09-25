@@ -28,11 +28,11 @@
   margin-bottom: 10px;
 
   color: var(--secondary-text-color);
-  @mixin font($fw: 500, $fs: 16px, $lh: 19px);
+  @include font($fw: 500, $fs: 16px, $lh: 19px);
 }
 .team-card__label {
   margin-bottom: 16px;
-  @mixin font($fs: 16px, $lh: 19px);
+  @include font($fs: 16px, $lh: 19px);
 }
 
 .team-socials {

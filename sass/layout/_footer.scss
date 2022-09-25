@@ -23,8 +23,6 @@
   margin-bottom: 9px;
 }
 .contacts__location-link {
-  display: block;
-
   font-style: normal;
   color: var(--white-color);
 
@@ -37,8 +35,6 @@
 }
 
 .contacts__communication-link {
-  display: block;
-
   font-style: normal;
   color: var(--footer-text-color);
 
@@ -93,7 +89,7 @@
   padding-left: 16px;
   font-family: 'Roboto';
   font-style: normal;
-  @mixin font($fs: 16px, $lh: 20px);
+  @include font($fs: 16px, $lh: 20px);
   color: var(--white-color);
 
   &::placeholder {

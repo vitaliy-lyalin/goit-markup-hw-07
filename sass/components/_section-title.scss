@@ -3,6 +3,6 @@
   margin-bottom: 50px;
   text-align: center;
 
-  @mixin font($fw: 700, $fs: 36px, $lh: 42px)
+  @include font($fw: 700, $fs: 36px, $lh: 42px);
   color: var(--secondary-text-color);
 }

@@ -17,7 +17,7 @@
   width: 100%;
   height: 70px;
 
-  @mixin font($fw: 700, $lh: 16px);
+  @include font($fw: 700, $lh: 16px);
   text-transform: uppercase;
 
   color: var(--white-color);
